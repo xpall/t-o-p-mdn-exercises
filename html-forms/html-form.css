@@ -1,0 +1,33 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 20rem;
+  padding: 2%;
+  margin: 0rem 30rem;
+  border: 1px solid black;
+
+}
+
+h2 {
+}
+
+textarea {
+  flex-grow: 1;
+}
+
+#submit {
+  margin-top: 1rem;
+}
+
+
+input:hover,
+textarea:hover {
+  border: 2px solid red;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
