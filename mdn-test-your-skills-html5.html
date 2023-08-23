@@ -1,0 +1,247 @@
+<form>
+  <ul>
+    <li>
+      <label for="userID">User ID</label>
+      <input type="text" name="userID" id="userID">
+    </li>
+    <li>
+      <label for="passwd">Password</label>
+      <input type="password" name="passwd" id="passwd">
+    </li>
+    <li>
+      <button type="submit">Log in</button>
+    </li>
+  </ul>
+</form>
+
+<style>
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+
+<form>
+  <fieldset>
+    <legend>Who is your favorite pony?</legend>
+    <ul>
+      <li>
+        <input type="radio" name="pony" id="pinkie" checked>
+        <label for="pinkie">Pinkie Pie</label>
+      </li>
+      <li>
+        <input type="radio" name="pony" id="rainbow">
+        <label for="rainbow">Rainbow Dash</label>
+      </li>
+      <li>
+        <input type="radio" name="pony" id="twilight">
+        <label for="twilight">Twilight Sparkle</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Hotdog preferences</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="hotdog" id="vegan">
+        <label for="vegan">Vegan</label>
+      </li>
+      <li>
+        <input type="checkbox" name="hotdog" id="onions">        
+        <label for="onions">Onions</label>
+      </li>
+      <li>
+        <input type="checkbox" name="hotdog" id="barbeque">        
+        <label for="barbeque">Barbeque</label>
+      </li>      
+    </ul>
+  </fieldset>
+  <button>Submit</button>
+</form>
+
+<style>
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+
+<form>
+  <ul>
+    <li>
+      <label for="gallery-img">Choose gallery images to upload</label>
+      <input type="file" name="gallery-img" id="gallery-img" accept="images" multiple>     
+    </li>
+  </ul>
+<button>Submit</button>
+</form>
+  
+<style>
+  li {
+    list-style: none;
+    align-items: center;
+  }
+</style>
+
+<!-- test your skills html5 controls -->
+
+<form>
+  <section>
+    <legend>Edit your preferences</legend>
+      <ul>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </li>
+        <li>
+          <label for="website">Website</label>
+          <input type="url" name="website" id="website">
+        </li>
+        <li>
+          <label for="phone-number">Phone number</label>
+          <input type="tel" name="phone-number" id="phone-number">
+        </li>
+        <li>
+          <label for="favorite-color">Favorite color</label>
+          <input type="color" name="favorite-color" id="favorite-color">
+        </li>
+        <li>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+  </section>
+</form>
+
+<style>
+  li {
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+
+
+<form>
+  <ul>
+    <li>
+      <label for="max-invite">Select maximum number of invitations</label>
+      <input type="range" 
+              name="max-invite" 
+              id="max-invite" 
+              min="1" 
+              max="30" 
+              value="10"> 
+      <output class="invite-output" for="max-invite"></output>
+    </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
+
+<style>
+  li {
+    list-style: none;
+  }
+</style>
+
+<script>
+  const price = document.querySelector("#price");
+  const output = document.querySelector(".price-output");
+
+  output.textContent = price.value;
+
+  price.addEventListener("input", () => {
+    output.textContent = price.value;
+  });
+</script>
+
+
+<!-- other controls 1 -->
+
+<form>
+  <h2>Enter your comment</h2>
+  <ul>
+    <li>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+    </li>
+    <li>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" cols="35" rows="10" maxlength="100"></textarea>
+    </li>
+    <li>
+      <button>Submit comment</button>
+    </li>
+  </ul>
+</form>
+<style>
+  textarea {
+    resize: vertical;
+  }
+
+  li {
+    display: flex;
+  }
+</style>
+
+
+<!-- other controls 2 -->
+
+<form>
+  <ul>
+    <li>
+      <label for="food">Pick your favorite food:</label>
+          <select name="food" id="food">
+            <optgroup label="mains">
+              <option value="salad">Salad</option>
+              <option value="curry">Curry</option>
+              <option value="pizza">Pizza</option>
+              <option value="fajitas">Fajitas</option>
+            </optgroup>
+            <optgroup label="snacks">
+              <option value="biscuits">Biscuits</option>
+              <option value="crisps">Crisps</option>
+              <option value="fruit">Fruit</option>
+              <option value="breadsticks">Breadsticks</option>
+            </optgroup>
+          </select>
+    </li>
+    <li>
+      <button>Submit choice</button>
+    </li>
+  </ul>
+
+  <style>
+    li {
+      list-style: none;
+    }
+  </style>
+
+  <!-- other-controls 3 -->
+  <form>
+  <ul>
+    <li>
+      <label for="food">Enter your favorite food:</label>
+      <input type="text" name="food" id="food" list="food-list">
+          <datalist id="food-list">
+            <option value="salad">Salad</option>
+            <option value="curry">Curry</option>
+            <option value="pizza">Pizza</option>
+            <option value="fajitas">Fajitas</option>
+            <option value="biscuits">Biscuits</option>
+            <option value="crisps">Crisps</option>
+            <option value="fruit">Fruit</option>
+            <option value="breadsticks">Breadsticks</option>
+          </datalist>
+
+    </li>
+    <li>
+      <button>Submit choice</button>
+    </li>
+  </ul>
+</form>
